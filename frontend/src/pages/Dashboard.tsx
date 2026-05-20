@@ -257,7 +257,7 @@ const Dashboard: React.FC = () => {
 
         return (
           <div className="flex flex-col h-full justify-between">
-            <div className="flex items-start gap-3">
+            <div className="flex items-start gap-3 pr-32">
               <div className="p-2 bg-emerald-500/10 text-emerald-500 rounded-lg flex-shrink-0 mt-0.5 animate-pulse">
                 <Flame className="w-4 h-4" />
               </div>
@@ -346,7 +346,7 @@ const Dashboard: React.FC = () => {
       case 'velocity': {
         return (
           <div className="flex flex-col h-full justify-between">
-            <div className="flex items-start gap-3">
+            <div className="flex items-start gap-3 pr-32">
               <div className="p-2 bg-violet-500/10 text-violet-500 rounded-lg flex-shrink-0 mt-0.5">
                 <Clock className="w-4 h-4" />
               </div>
@@ -410,7 +410,7 @@ const Dashboard: React.FC = () => {
       case 'status': {
         return (
           <div className="flex flex-col h-full justify-between">
-            <div className="flex items-start gap-3">
+            <div className="flex items-start gap-3 pr-32">
               <div className="p-2 bg-indigo-500/10 text-indigo-500 rounded-lg flex-shrink-0 mt-0.5">
                 <TrendingUp className="w-4 h-4" />
               </div>
@@ -461,7 +461,7 @@ const Dashboard: React.FC = () => {
       case 'source': {
         return (
           <div className="flex flex-col h-full justify-between">
-            <div className="flex items-start gap-3">
+            <div className="flex items-start gap-3 pr-32">
               <div className="p-2 bg-pink-500/10 text-pink-500 rounded-lg flex-shrink-0 mt-0.5">
                 <Users className="w-4 h-4" />
               </div>

@@ -118,7 +118,7 @@ export const LeadMap: React.FC<LeadMapProps> = ({ data = [] }) => {
 
   return (
     <div className="relative w-full h-full flex flex-col justify-between">
-      <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-4">
+      <div className="flex flex-col border-b border-slate-100 dark:border-slate-800 pb-4 pr-32">
         <div className="flex items-start gap-3">
           <div className="p-2 bg-indigo-500/10 text-indigo-500 rounded-lg flex-shrink-0 mt-0.5 animate-pulse">
             <MapPin className="w-4 h-4" />
@@ -130,17 +130,18 @@ export const LeadMap: React.FC<LeadMapProps> = ({ data = [] }) => {
             <p className="text-xs text-slate-400 dark:text-slate-500 mt-1">
               Interactive distribution by territories
             </p>
+            {/* Legend moved here to avoid widget controls overlap */}
+            <div className="flex items-center gap-3 mt-3">
+              <span className="flex items-center gap-1 text-[10px] font-semibold text-slate-500 dark:text-slate-400">
+                <span className="w-2.5 h-2.5 rounded bg-indigo-500/20 border border-indigo-500/40" />
+                Low Density
+              </span>
+              <span className="flex items-center gap-1 text-[10px] font-semibold text-slate-500 dark:text-slate-400">
+                <span className="w-2.5 h-2.5 rounded bg-indigo-500/80" />
+                High Density
+              </span>
+            </div>
           </div>
-        </div>
-        <div className="flex items-center gap-3">
-          <span className="flex items-center gap-1 text-[10px] font-semibold text-slate-500 dark:text-slate-400">
-            <span className="w-2.5 h-2.5 rounded bg-indigo-500/20 border border-indigo-500/40" />
-            Low Density
-          </span>
-          <span className="flex items-center gap-1 text-[10px] font-semibold text-slate-500 dark:text-slate-400">
-            <span className="w-2.5 h-2.5 rounded bg-indigo-500/80" />
-            High Density
-          </span>
         </div>
       </div>
 
