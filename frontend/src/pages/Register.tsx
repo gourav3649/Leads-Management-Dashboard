@@ -45,14 +45,14 @@ const Register: React.FC = () => {
     try {
       const response = await axios.post('/auth/register', values);
       const { token, user } = response.data.data;
-      
+
       login(token, {
         id: user._id || user.id,
         name: user.name,
         email: user.email,
         role: user.role,
       });
-      
+
       navigate('/dashboard');
     } catch (err: any) {
       const msg = err.response?.data?.message || 'Failed to register. Please try again.';
@@ -108,7 +108,7 @@ const Register: React.FC = () => {
             <Input
               label="Full Name"
               type="text"
-              placeholder="Gourav Dutt"
+              placeholder="Your Full Name"
               error={errors.name?.message}
               {...register('name')}
             />
