@@ -118,7 +118,7 @@ export const LeadMap: React.FC<LeadMapProps> = ({ data = [] }) => {
 
   return (
     <div className="relative w-full h-full flex flex-col justify-between">
-      <div className="flex flex-col border-b border-slate-100 dark:border-slate-800 pb-4 pr-32">
+      <div className="flex flex-col border-b border-slate-100 dark:border-slate-800 pb-4 pr-48">
         <div className="flex items-start gap-3">
           <div className="p-2 bg-indigo-500/10 text-indigo-500 rounded-lg flex-shrink-0 mt-0.5 animate-pulse">
             <MapPin className="w-4 h-4" />
